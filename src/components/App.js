@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import "../styles/App.css";
 import Guests from "./Guests";
 import Meals from "./Meals";
 
