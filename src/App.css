@@ -26,7 +26,21 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.meals {
+  text-align: left;
+  margin-left: 200px;
+}
+
+.meals-list {
+  margin-bottom: 1em;
+}
+
+.meals-list__item {
+  margin-right: 20px;
 }
