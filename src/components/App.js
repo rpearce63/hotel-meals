@@ -27,7 +27,7 @@ class App extends Component {
         for (let index = 0; index < days; index++) {
           const date = new Date(startDate);
           date.setDate(date.getDate() + index);
-          menuDates.push(date);
+          menuDates.push(this.dateToString(date));
         }
         menusArray.push({ name, dates: [...menuDates] });
       } else {
@@ -42,7 +42,13 @@ class App extends Component {
     const aDate = new Date(parts[0], parts[1] - 1, parts[2]);
     return aDate;
   }
+  datetoString(date) {
+    const year = date.getFullYear();
+    let month = ("0" + (date.getMonth() + 1)).slice(-2);
+    let day = ("0" + date.getDate()).slice(-2);
 
+    return `${year}-${month}-${day}`;
+  }
   getGuestInfo = e => {
     this.setState(
       {

@@ -8,6 +8,7 @@ export default class Guests extends Component {
       <div>
         <textarea
           name="names"
+          id="namesText"
           cols="30"
           rows="2"
           placeholder="Guest name"
@@ -17,6 +18,7 @@ export default class Guests extends Component {
         />
         <textarea
           name="dates"
+          id="datesText"
           cols="30"
           rows="2"
           placeholder="Dates"
